@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnaClass">
+
+
+    <TextView
+        android:id="@+id/textBakiye"
+        android:layout_width="141dp"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Bakiye"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textBakiyeTRY"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="60dp"
+        android:text="1000 ₺"
+        />
+
+    <TextView
+        android:id="@+id/textBakiyeUSD"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textBakiyeTRY"
+        android:layout_marginEnd="51dp"
+        android:text="100 $" />
+
+    <TextView
+        android:id="@+id/textBakiyeEUR"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textBakiyeTRY"
+        android:layout_marginTop="109dp"
+        android:text="100 €" />
+
+    <TextView
+        android:id="@+id/textBakiyeGBP"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/textBakiyeUSD"
+        android:layout_alignTop="@+id/textBakiyeEUR"
+        android:layout_marginEnd="51dp"
+        android:text="100 £" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="" />
+
+
+    <Button
+        android:id="@+id/buttonSatinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textBakiyeTRY"
+        android:layout_marginBottom="89dp"
+        android:text="Satin Al" />
+
+    <Button
+        android:id="@+id/buttonBozdur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/buttonSatinal"
+        android:layout_marginEnd="58dp"
+        android:text="Bozdur" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="84dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioUSD"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="USD" />
+
+        <RadioButton
+            android:id="@+id/radioEUR"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="EUR" />
+
+        <RadioButton
+            android:id="@+id/radioGBP"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="GBP" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSirala"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:text="Kullanicilari Sirala" />
+
+    <TextView
+        android:id="@+id/textUSD"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="172dp"
+        android:layout_toStartOf="@+id/textBakiye"
+         />
+
+    <TextView
+        android:id="@+id/textEUR"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignTop="@+id/textUSD"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:id="@+id/textGBP"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignEnd="@+id/textBakiyeUSD"
+        android:layout_alignTop="@+id/textUSD"
+        />
+</RelativeLayout>
